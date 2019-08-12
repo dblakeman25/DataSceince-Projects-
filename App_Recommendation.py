@@ -62,8 +62,6 @@ explore_data(android,0,3,True)
 # Number of Columns = 13
 
 
-# In[37]:
-
 
 # Print headers of columns. 
 print(ios_header)
@@ -76,11 +74,7 @@ print(android_header)
 
 
 # # Data Cleaning
-#    _______________________
-
-# In[38]:
-
-
+#  ________________
 # There is an issue with one of the rows not having the right amount of information. 
 #This row needs to be deleted.
 #To determine the proble row:
@@ -103,12 +97,8 @@ print(android[10473])
 #and row 10473 (has the right amount of row data)
 # Row 10472 has to be deleted 
 
-#del andriod[10472] # Don't run this more than once   
+del andriod[10472] # Don't run this more than once   
 # Row 10472 has been deleted 
-
-
-# In[49]:
-
 
 print(len(android))
 # The number of rows for Android has gone from 10842 tro 1041 rows.
@@ -119,13 +109,6 @@ for row in ios:
         print(ios.index(row))
         
 # Checked the number of row data in comparison to the column header. All rows have the correct number of row dataset.
-
-        
-
-
-
-# In[40]:
-
 
 # The Google Play dataset has a few duplicate enteries.
 # An example of a duplicate entry is:
@@ -165,11 +148,6 @@ print('Some apps with duplicate enteries are: ', duplicate_entry[:10])
 #Some apps with duplicate enteries are:  
 #['Quick PDF Scanner + OCR FREE', 'Box', 'Google My Business', 'ZOOM Cloud Meetings', 'join.me - Simple Meetings', 'Box', 'Zenefits', 'Google Ads', 'Google My Business', 'Slack']
 
-
-
-# In[48]:
-
-
 # We do not want multiple enteries for each app. To determine which entry for each app to keep
 # We have to choose the entry that has the higher number of revie
 #For example, Facebook has two enteries:
@@ -183,7 +161,6 @@ print(android_header)
 
 
 
-# In[ ]:
 
 
 
