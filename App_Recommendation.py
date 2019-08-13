@@ -97,7 +97,7 @@ print(android[10473])
 #and row 10473 (has the right amount of row data)
 # Row 10472 has to be deleted 
 
-del andriod[10472] # Don't run this more than once   
+del android[10472] # Don't run this more than once   
 # Row 10472 has been deleted 
 
 print(len(android))
